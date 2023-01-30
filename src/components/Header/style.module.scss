@@ -1,0 +1,45 @@
+.header {
+  background: #040303;
+
+  &_box {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1368px;
+    padding: 0 24px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #f5f6fa;
+      font-weight: 700;
+      margin: 0 0 0 24px;
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+      color: #f5f6fa;
+      font-family: DM Sans, sans-serif;
+      font-weight: 700;
+      text-decoration: initial;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

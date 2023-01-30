@@ -1,0 +1,22 @@
+.movie_list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  margin: 0 auto;
+  max-width: 1368px;
+  padding: 0 24px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.empty {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1368px;
+}

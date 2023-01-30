@@ -1,7 +1,19 @@
 import React from 'react';
+import Header from './components/Header';
+import MovieList from './components/MovieList';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+import './web/css/style.scss';
 class App extends React.Component {
   render() {
-    return <h2>Hi, I am a Car!</h2>;
+    return (
+      <>
+        <ToastContainer />
+        <Header />
+        <MovieList />
+      </>
+    );
   }
 }
 

@@ -1,0 +1,51 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px auto;
+  max-width: 1368px;
+  padding: 0 24px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 12px auto;
+
+    .right,
+    .left {
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .left button {
+      margin-bottom: 12px;
+
+      &:last-of-type {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f6fa;
+    padding: 12px 18px;
+    background: #040303;
+    border-radius: 6px;
+    border: initial;
+    margin-right: 24px;
+    cursor: pointer;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &.active {
+      background: #44c166;
+      color: #040303;
+    }
+  }
+}

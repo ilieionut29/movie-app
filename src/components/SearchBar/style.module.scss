@@ -1,0 +1,44 @@
+.search {
+  margin: 24px auto;
+  max-width: 1368px;
+  padding: 0 24px;
+
+  @media (max-width: 768px) {
+    margin: 12px auto;
+  }
+
+  &_box {
+    border: 2px solid #111827;
+    border-radius: 6px;
+    position: relative;
+    width: 390px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  input {
+    font-size: 16px;
+    color: #111827;
+    width: 100%;
+    background: transparent;
+    border: initial;
+    padding: 10px 38px 10px 12px;
+
+    &:focus-visible {
+      outline: initial;
+    }
+  }
+
+  svg {
+    font-size: 18px;
+    color: #111827;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,33 @@
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1368px;
+  margin: 24px;
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #040303;
+    padding: 12px 18px;
+    background: #44c166;
+    border-radius: 6px;
+    border: initial;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+      font-size: 14px;
+      gap: 12px;
+    }
+  }
+}

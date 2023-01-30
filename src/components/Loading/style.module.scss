@@ -1,0 +1,42 @@
+.loading {
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    border-radius: 12px;
+    background: #44c166;
+    top: 50%;
+    left: 0;
+    animation: loading 1s linear infinite;
+  }
+
+  &:after {
+    animation-delay: -0.3s;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  90% {
+    width: 100%;
+    left: 0%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
