@@ -189,10 +189,12 @@ class MovieList extends React.Component {
                         );
                       })}
                     </ul>
-                    <Pager
-                      handlePrevPage={this.handlePrevPage}
-                      handleNextPage={this.handleNextPage}
-                    />
+                    {this.state.searchQuery === '' && (
+                      <Pager
+                        handlePrevPage={this.handlePrevPage}
+                        handleNextPage={this.handleNextPage}
+                      />
+                    )}
                   </>
                 ) : (
                   <span className={style.empty}>
