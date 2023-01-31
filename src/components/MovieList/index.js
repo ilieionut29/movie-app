@@ -64,10 +64,6 @@ class MovieList extends React.Component {
     this.setState({ initialPage: 1 });
   };
 
-  handleSearch = (e) => {
-    this.setState({ searchQuery: e.target.value });
-  };
-
   handleNextPage = () => {
     if (this.state.initialPage < 7) {
       this.setState(
@@ -147,7 +143,7 @@ class MovieList extends React.Component {
 
         <SearchBar
           searchQuery={this.state.searchQuery}
-          handleSearch={this.handleSearch}
+          handleSearch={(e) => this.setState({ searchQuery: e.target.value })}
         />
 
         {this.state.showFavorites ? (
